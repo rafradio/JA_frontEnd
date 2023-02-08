@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Roboto Flex', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #F5F5F5;
+    padding: 0 !important;
+}
+.container {
+    display: block;
+    position: relative;
+    width: 1440px;
+    height: auto;
+    border: 1px solid black;
+}
+/* .container_wrap {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+} */
+.logoshape {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #FFD980;
+    margin: 0;
+    padding-left: 45px;
+}
+.logobox {
+    display: block;
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    left: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0.5px solid black;
+}
+.logobox .JALogo_pic {
+    width: 78px;
+    height: 78px;
+}
+.pictures_wrap {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 580px;
+    border: 0.5px solid black;
+    overflow: hidden;
+}
+.picture_11 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 128px;
+    width: 571px;
+    height: 327px;
+    border: 0.5px solid black;
+}
+.picture_11 .top_image1 {
+    width: 571px;
+    height: 327px;
+}
+.picture_tagline {
+    display: block;
+    position: absolute;
+    top: 119px;
+    left: 679px;
+    width: 770px;
+    height: 417px;
+    transform-origin: 0% 100%;
+    transform: rotate(-8deg);
+    border: 0.5px solid black;
+}
+.triangle {
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.text_tagline {
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 45%;
+    right: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    /* border: 0.5px solid black; */
+    padding: 20px;
+    align-items: right;
+    font-size: 50px;
+}
+.text_tagline p {
+    font-size: 40px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.main_titles {
+    position: relative;
+    width: 100%;
+    height: 148;
+    padding-top: 45;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solid black;
+}
+.main_titles h1 {
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 400;
+}
+.main_titles h2 {
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 400;
+}
+.wrap_button_landing {
+    position: relative;
+    width: 100%;
+    height: 119px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid black;
+}
+.button_landing {
+    position: relative;
+    width: 450px;
+    height: 59px;
+    background: #e19a1f;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.button_landing p {
+    font-size: 25px;
+    line-height: 30.26px;
+    font-weight: 400;
+}
+

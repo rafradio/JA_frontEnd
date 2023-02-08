@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Job Assistant</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,800&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/styleModal.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="logoshape">
+            <div class="logobox">
+                <img src="img/LogoJA.svg" alt="Job assistant logo" class="JALogo_pic">
+            </div>
+        </div>
+        <div class="pictures_wrap">
+            <div class="picture_11">
+                <img src="img/Top_Image1.png" alt="Job assistant" class="top_image1">
+            </div>
+            <div class="picture_tagline">
+                <svg class="triangle">
+                    <polygon points="0,186 539,0 539,372" style="fill:rgb(113, 146, 248)"/>
+                </svg>
+                <div class="text_tagline"><p>Ищешь работу?<br>Опереди всех с<br>JobAssistant!</p></div>
+            </div>
+        </div>
+        <div class="main_titles">
+            <h1>JobAssistan поможет тебе быстро найти работу мечты!</h1>
+            <h2>Оставь заявку и стань первым!</h2>
+        </div>
+        <div class="wrap_button_landing">
+            <div class="button_landing"><p>Оставить заявку</p></div>
+        </div>
+    </div>
+    <div id="request_modal" class="request_modal_wrap">
+        <div class="request_modal">
+            <div class="modal_icons">
+                <img src="img/LogoJA.svg" alt="Job assistant logo" class="JALogo_pic">
+                <img src="img/Icon_Close3x.svg" alt="Close logo" class="close_btn">
+            </div>
+            <form id="testForm" class="modal_content">
+                <div class="form_name">Заявка</div>
+                <div class="data_enter">
+                    <div class="active_line"></div>
+                    <label for="name" class="form-field__label">Ваше имя</label>
+                    <input id="name" type="text" class="form-field__input" name="name_data" placeholder="Мария">
+                </div>
+                <div class="data_enter">
+                    <div class="active_line"></div>
+                    <label for="name" class="form-field__label">E-mail</label>
+                    <input id="name" type="text" class="form-field__input" name="name_data" placeholder="marija@mail.ru">
+                </div>
+                <div class="form_button"><p>Отправить</p></div>
+            </form>
+        </div>
+    </div>
+    <script src="js/animation.js" type="module"></script>
+</body>
+</html>
