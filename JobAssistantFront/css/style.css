@@ -32,6 +32,7 @@ body {
     background: #FFD980;
     margin: 0;
     padding-left: 45px;
+    margin-bottom: 54px;
 }
 .logobox {
     display: block;
@@ -47,22 +48,55 @@ body {
     width: 78px;
     height: 78px;
 }
-.pictures_wrap {
-    display: block;
+.top_text_wrap {
+    display: flex;
     position: relative;
     width: 100%;
-    height: 580px;
+    height: 148px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 32px;
+    border: 0.5px solid black;
+}
+.top_text {
+    display: flex;
+    position: relative;
+    width: 495px;
+    height: 84px;
+    border: 0.5px solid black;
+    /* align-items: center;
+    justify-content: center; */
+}
+.top_text h2 {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 400;
+}
+.top_text_wrap .left {
+    text-align: left;
+}
+.top_text_wrap .right {
+    text-align: right;
+}
+.pictures_wrap {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 460px;
     border: 0.5px solid black;
     overflow: hidden;
 }
 .picture_11 {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 128px;
+    display: flex;
+    position: relative;
     width: 571px;
     height: 327px;
-    border: 0.5px solid black;
 }
 .picture_11 .top_image1 {
     width: 571px;
@@ -109,8 +143,8 @@ body {
 .main_titles {
     position: relative;
     width: 100%;
-    height: 148;
-    padding-top: 45;
+    height: 512px;
+    padding-top: 35px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,8 +155,32 @@ body {
     font-size: 30px;
     line-height: 39px;
     font-weight: 400;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 .main_titles h2 {
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 400;
+}
+.main_titles .main_list {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 275px;
+    width: 823px;
+    align-items: left;
+    border: 0.5px solid black;
+}
+.main_list li {
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.main_titles_last {
+    display: flex;
+    text-align: center;
     font-size: 30px;
     line-height: 39px;
     font-weight: 400;
