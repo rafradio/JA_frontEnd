@@ -18,6 +18,7 @@ body {
     width: 1440px;
     height: auto;
     border: 1px solid black;
+    overflow: hidden;
 }
 /* .container_wrap {
     display: block;
@@ -67,6 +68,10 @@ body {
     width: 551px;
     height: 84px;
     border: 0.5px solid black;
+    opacity: 0;
+    /* opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; */
     /* align-items: center;
     justify-content: center; */
 }
@@ -78,10 +83,46 @@ body {
     font-weight: 400;
 }
 .top_text_wrap .left {
+    left: -300px;
     text-align: left;
+    
+}
+.animation_left {
+    -webkit-animation-name: animateleft;
+    -webkit-animation-duration: 0.7s;
+    animation-name: animateleft;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes animateleft {
+    from {left:-300px; opacity:0} 
+    to {left:0px; opacity:1}
+  }
+
+@keyframes animateleft {
+    from {left:-300px; opacity:0} 
+    to {left:0px; opacity:1}
 }
 .top_text_wrap .right {
     text-align: right;
+    left: 300px;
+    
+}
+.animation_right {
+    -webkit-animation-name: animateright;
+    -webkit-animation-duration: 0.7s;
+    animation-name: animateright;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes animateright {
+    from {left:300px; opacity:0} 
+    to {left:0px; opacity:1}
+  }
+
+@keyframes animateright {
+    from {left:300px; opacity:0} 
+    to {left:0px; opacity:1}
 }
 .pictures_wrap {
     display: flex;
