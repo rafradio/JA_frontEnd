@@ -1,6 +1,7 @@
 function requestEmailForm() {
-    this.topTextBlocksLeft = document.querySelectorAll('.left');
-    this.topTextBlocksRight = document.querySelectorAll('.right');
+    // this.topTextBlocksLeft = document.querySelectorAll('.left');
+    // this.topTextBlocksRight = document.querySelectorAll('.right');
+    // this.textMain = document.querySelectorAll('.main_info');
     this.reqButton = document.querySelector('.button_landing');
 
     this.regForm = document.querySelector('.request_modal_wrap');
@@ -8,7 +9,7 @@ function requestEmailForm() {
     this.inputText = document.querySelectorAll('.form-field__input');
     this.activeLine = document.querySelectorAll('.active_line');
     this.submitButton = document.querySelector('.form_button');
-    this.initSettings();
+    // this.initSettings();
 }
 
 requestEmailForm.prototype.initSettings = function() {
@@ -28,7 +29,7 @@ requestEmailForm.prototype.initSettings = function() {
     this.closeBtn.addEventListener('click', () => {this.regForm.classList.remove("request_modal_wrap_on");});
     this.submitButton.addEventListener('click', () => {this.saveData()});
 
-    window.onload = () => {this.textAnimation();}
+    // window.onload = () => {this.textAnimation();}
 }
 
 requestEmailForm.prototype.checking = function(x) {
@@ -55,6 +56,9 @@ requestEmailForm.prototype.textAnimation = function() {
     this.topTextBlocksRight.forEach((item, pos) => {
         this.animateObserver(item, "animation_right");
     });
+    this.textMain.forEach((item, pos) => {
+        this.animateObserver(item, "animation_text");
+    });
 }
 
 requestEmailForm.prototype.animateObserver = function(item, className) {
@@ -72,3 +76,5 @@ requestEmailForm.prototype.animateObserver = function(item, className) {
 
 
 const myReqForm = new requestEmailForm();
+
+export {myReqForm};
